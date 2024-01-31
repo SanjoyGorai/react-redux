@@ -32,7 +32,7 @@ const App = () => {
   }
 
   return (
-    <div className=''>
+    <div className='bg'>
       <News/>
       <Users/>
       <h1 className='text-xl '>Redux React Vite App</h1>

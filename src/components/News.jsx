@@ -7,14 +7,17 @@ const News = () => {
     console.log(news)
 
     return (
-        <div>
+        <div className=''>
 
             {
-                news.map((news, index) => {
+                news?.map((news, index) => {
                     return (
                         <div key={index} className='m-2'>
-                            <h1>{news.heading}</h1>
                             <img src={news.image} alt="" />
+                            <p className='p-1'>{news.date} </p>
+                            <h1 className='text-2xl font-bold p-1'>{news.heading}</h1>
+                            <p className='p-1'>{news.subHeading} </p>
+                            <p className='p-1'>{news.description} </p>
                         </div>
                     )
                 })
