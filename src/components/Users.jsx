@@ -13,7 +13,7 @@ const Users = () => {
             {
                 users.map((user) => {
                     return (
-                        <div key={user.id}>
+                        <div key={user.id} className='bg-slate-600 p-1 m-2 w-fit rounded'>
                             <h3 className='font-bold text-xl m-2 text-pink-600'>Name : {user.name}  </h3>
                             <h3 className='font-bold text-xl m-2 text-pink-600'>Age :  {user.age} </h3>
                             <h3 className='font-bold text-xl m-2 text-pink-600'>Email  {user.email} : </h3>
