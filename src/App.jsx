@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import store from './app/store';
 import { increment, decrement } from './features/counter/counterSlice';
 import Users from './components/Users';
+import Blog from './components/Blog';
 
 const App = () => {
 
@@ -31,6 +32,7 @@ const App = () => {
 
   return (
     <div className=''>
+      <Blog/>
       <Users/>
       <h1 className='text-xl '>Redux React Vite App</h1>
       <h1 className='font-bold text-2xl text-blue-700 m-2'>Value : {value} </h1>
